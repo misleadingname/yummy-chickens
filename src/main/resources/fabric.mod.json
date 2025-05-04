@@ -1,38 +1,41 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "yummychickens",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Yummy Chickens",
+  "description": "Edible chickens...",
   "authors": [
-    "Turnip Labs"
+    "misname"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "homepage": "https://misleadingname.cc",
+    "sources": "https://github.com/misleadingname/yummy-chickens"
   },
 
 	"icon": "icon.png",
-  "license": "CC0-1.0",
+  "license": "MIT",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+	    "msnm.yummychickens.YummyChickens"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"msnm.yummychickens.YummyChickens"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"msnm.yummychickens.YummyChickens"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
-		]
+			"msnm.yummychickens.YummyChickens"
+		],
+	  "initModels": [
+		  "msnm.yummychickens.YummyChickens"
+	  ]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+      "yummychickens.mixins.json"
   ],
 
   "depends": {
