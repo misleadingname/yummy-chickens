@@ -8,7 +8,7 @@ import turniplabs.halplibe.util.GameStartEntrypoint;
 import turniplabs.halplibe.util.RecipeEntrypoint;
 
 public class YummyChickens implements ModInitializer, RecipeEntrypoint, GameStartEntrypoint {
-	public static final String MOD_ID = "YummyChickens";
+	public static final String MOD_ID = "yummychickens";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	@Override
@@ -23,6 +23,7 @@ public class YummyChickens implements ModInitializer, RecipeEntrypoint, GameStar
 
 	@Override
 	public void initNamespaces() {
+		ChickenItems.ConstructNamespaces();
 	}
 
 	@Override

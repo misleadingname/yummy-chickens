@@ -4,6 +4,7 @@ import msnm.yummychickens.YummyChickens;
 import net.minecraft.core.item.ItemFood;
 import net.minecraft.core.util.collection.NamespaceID;
 import turniplabs.halplibe.helper.ItemBuilder;
+import turniplabs.halplibe.helper.RecipeBuilder;
 import turniplabs.halplibe.helper.recipeBuilders.RecipeBuilderFurnace;
 
 public class ChickenItems {
@@ -16,7 +17,7 @@ public class ChickenItems {
 		RAW_CHICKEN = new ItemBuilder(YummyChickens.MOD_ID)
 			.build(new ItemFood(
 			"rawChicken",
-			NamespaceID.getPermanent("yummyChickens", "rawChicken").toString(),
+			NamespaceID.getPermanent(YummyChickens.MOD_ID, "rawChicken").toString(),
 			20000,
 			4,
 			18,
@@ -27,7 +28,7 @@ public class ChickenItems {
 		COOKED_CHICKEN = new ItemBuilder(YummyChickens.MOD_ID)
 			.build(new ItemFood(
 				"cookedChicken",
-				NamespaceID.getPermanent("yummyChickens", "cookedChicken").toString(),
+				NamespaceID.getPermanent(YummyChickens.MOD_ID, "cookedChicken").toString(),
 				20001,
 				13,
 				14,
@@ -40,6 +41,10 @@ public class ChickenItems {
 		RAW_CHICKEN_FURNACE_RECIPE = new RecipeBuilderFurnace(YummyChickens.MOD_ID)
 			.setInput(RAW_CHICKEN);
 
-		RAW_CHICKEN_FURNACE_RECIPE.create("yummyChickens:cookedChicken", COOKED_CHICKEN.getDefaultStack());
+		RAW_CHICKEN_FURNACE_RECIPE.create(NamespaceID.getPermanent(YummyChickens.MOD_ID, "cookedChicken").toString(), COOKED_CHICKEN.getDefaultStack());
+	}
+
+	public static void ConstructNamespaces() {
+		RecipeBuilder.initNameSpace(YummyChickens.MOD_ID);
 	}
 }
