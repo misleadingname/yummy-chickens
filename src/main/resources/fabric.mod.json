@@ -1,47 +1,44 @@
 {
-  "schemaVersion": 1,
-  "id": "yummychickens",
-  "version": "${version}",
-
-  "name": "Yummy Chickens",
-  "description": "Edible chickens...",
-  "authors": [
-    "misname"
-  ],
-  "contact": {
-    "homepage": "https://misleadingname.cc",
-    "sources": "https://github.com/misleadingname/yummy-chickens"
-  },
-
-	"icon": "icon.png",
-  "license": "MIT",
-
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-	    "msnm.yummychickens.YummyChickens"
-    ],
-		"beforeGameStart": [
-			"msnm.yummychickens.YummyChickens"
-		],
-		"afterGameStart": [
-			"msnm.yummychickens.YummyChickens"
-		],
-		"recipesReady": [
-			"msnm.yummychickens.YummyChickens"
-		],
-	  "initModels": [
-		  "msnm.yummychickens.YummyChickens"
-	  ]
-	},
-  "mixins": [
+   "schemaVersion":1,
+   "id":"yummychickens",
+   "version":"${version}",
+   "name":"Yummy Chickens",
+   "description":"Edible chickens...",
+   "authors":[
+      "misname"
+   ],
+   "contact":{
+      "homepage":"https://misleadingname.cc",
+      "sources":"https://github.com/misleadingname/yummy-chickens"
+   },
+   "icon":"icon.png",
+   "license":"MIT",
+   "environment":"*",
+   "entrypoints":{
+      "main":[
+         "msnm.yummychickens.YummyChickens"
+      ],
+      "beforeGameStart":[
+         "msnm.yummychickens.YummyChickens"
+      ],
+      "afterGameStart":[
+         "msnm.yummychickens.YummyChickens"
+      ],
+      "recipesReady":[
+         "msnm.yummychickens.YummyChickens"
+      ],
+      "initModels":[
+         "msnm.yummychickens.YummyChickens"
+      ]
+   },
+   "mixins":[
       "yummychickens.mixins.json"
-  ],
-
-  "depends": {
-		"minecraft": "*",
-    "fabricloader": ">=0.15.5"
-  },
-  "suggests": {
-  }
+   ],
+   "depends":{
+      "minecraft":"*",
+      "fabricloader":">=0.15.5"
+   },
+   "suggests":{
+      
+   }
 }
