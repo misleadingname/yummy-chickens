@@ -28,7 +28,7 @@
          "msnm.yummychickens.YummyChickens"
       ],
       "initModels":[
-         "msnm.yummychickens.YummyChickens"
+         "msnm.yummychickens.YummyChickensCl"
       ]
    },
    "mixins":[
@@ -39,6 +39,6 @@
       "fabricloader":">=0.15.5"
    },
    "suggests":{
-      
+
    }
 }
