@@ -1,5 +1,5 @@
-item.rawChicken.name=Raw Chicken
-item.rawChicken.desc=Uncooked chicken from... a chicken.
+item.YummyChickens.rawChicken.name=Raw Chicken
+item.YummyChickens.rawChicken.desc=Uncooked chicken from... a chicken.
 
-item.cookedChicken.name=Cooked Chicken
-item.cookedChicken.desc=Yummy fresh cooked chicken.
+item.YummyChickens.cookedChicken.name=Cooked Chicken
+item.YummyChickens.cookedChicken.desc=Yummy fresh cooked chicken.
