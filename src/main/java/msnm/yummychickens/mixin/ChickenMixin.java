@@ -20,7 +20,6 @@ public abstract class ChickenMixin {
 	public List<WeightedRandomLootObject> burningMobDrops = new ArrayList<>();
 	@Inject(method = "<init>", at = @At("RETURN"))
 	private void postConstruct(World world, CallbackInfo ci) {
-		YummyChickens.LOGGER.info("Adding drop to chicken");
 		((MobChicken) (Object) this).mobDrops.add(new WeightedRandomLootObject(ChickenItems.RAW_CHICKEN.getDefaultStack(), 1));
 
 		this.burningMobDrops.add(new WeightedRandomLootObject(ChickenItems.COOKED_CHICKEN.getDefaultStack(), 1));
